@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import Meaning from './Meaning';
-// import '../App.css'
-// import bg from '../assets/bg2.jpg'
+
 
 export default function Homepage() {
-  // useEffect(()=>{
+  
   const [word, setWord] = useState('')
   const [meaning, setMeaning] = useState('')
   const [isError,setError]=useState(false)
@@ -27,7 +26,7 @@ export default function Homepage() {
       url: 'https://thesaurus-by-api-ninjas.p.rapidapi.com/v1/thesaurus',
       params: { word: word },
       headers: {
-        'X-RapidAPI-Key': '296518cb80msh9374f6cdea98e92p1ed7e8jsnfd678c9251b0',
+        'X-RapidAPI-Key': '912743ad10zsl937daq3f6cdea98e92p1ed7e8jsnfd670c9987z0',
         'X-RapidAPI-Host': 'thesaurus-by-api-ninjas.p.rapidapi.com'
       }
     };
